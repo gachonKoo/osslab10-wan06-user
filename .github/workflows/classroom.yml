@@ -1,10 +1,12 @@
 import sys
 
-# number = int(sys.argv[1])  
-number = 100
+# 명령줄 인수로 받은 문자열을 정수로 변환하여 number에 저장
+number = int(sys.argv[1])
 
+# 1부터 number까지 반복
 for i in range(1, number + 1):
-  if number % i == 0:
-    print(i, end=" ")
+    # number를 i로 나누었을 때 나머지가 0이면 (i가 약수이면)
+	if number % i == 0:
+		print(i, end=" ")
 
-print()
+print() # 마지막에 줄 바꿈
